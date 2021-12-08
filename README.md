@@ -56,6 +56,8 @@
 
 5.Реализуете квотирование дискового пространства для каждого пользователя.
 
+![image](https://user-images.githubusercontent.com/70855182/145273951-87b985a9-4cc8-483b-8da1-1eb966755635.png)
+
 ![image](https://user-images.githubusercontent.com/70855182/145113874-b7bc4def-d471-4580-a8fb-4c023c2f7f46.png)
 
 6.Реализуйте учётную запись администратора сервера.
