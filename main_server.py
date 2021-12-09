@@ -164,14 +164,18 @@ def touch(name, text=''):
     global user_dir
     root = check()
     name = Path(root,name)
+    max_size = pow(2, 20) * 10 - getting(root)
+    if max_size < int(size):
+        return "Нет места"
     # with open(name, 'w') as file:
     #     pass
-    try:
-        name.touch()
-        name.write_text(text)
-        return "успешно"
-    except Exception:
-        return "wrong touch"
+    else:
+        try:
+            name.touch()
+            name.write_text(text)
+            return "успешно"
+        except Exception:
+            return "wrong touch"
 def rmdir(name):
     global user_dir
     root = check()
